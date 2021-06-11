@@ -8,6 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import java.awt.List;
 import java.awt.Choice;
+import java.awt.TextField;
 
 public class ConsultaArticulos2 extends JFrame
 {
@@ -47,9 +48,8 @@ public class ConsultaArticulos2 extends JFrame
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		Choice choice = new Choice();
-		choice.setBounds(114, 45, 217, 22);
-		contentPane.add(choice);
+		TextField txtFecha = new TextField();
+		txtFecha.setBounds(114, 82, 192, 22);
+		contentPane.add(txtFecha);
 	}
-
 }

@@ -59,6 +59,14 @@ public class Tickets extends JFrame
 		JButton btnNewButton = new JButton("Alta");
 		btnNewButton.setBounds(58, 111, 103, 30);
 		contentPane.add(btnNewButton);
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				setVisible(false);
+				new AltaTicket();
+				
+			}
+		});
 		
 		JButton btnNewButton_1 = new JButton("Consulta");
 		btnNewButton_1.addActionListener(new ActionListener() {
@@ -67,9 +75,27 @@ public class Tickets extends JFrame
 		});
 		btnNewButton_1.setBounds(267, 111, 103, 30);
 		contentPane.add(btnNewButton_1);
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				setVisible(false);
+				new ConsultaTicket();
+				
+			}
+		});
 		
 		JButton btnSalir = new JButton("Volver");
 		btnSalir.setBounds(323, 215, 97, 25);
 		contentPane.add(btnSalir);
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				setVisible(false);
+				new Tiendecita();
+
+			}
+		});
+		
+		setVisible(true);
 	}
 }

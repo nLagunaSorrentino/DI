@@ -10,6 +10,9 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JTextPane;
 import javax.swing.JEditorPane;
 import javax.swing.JTextArea;
@@ -89,12 +92,19 @@ public class ConsultaTicket extends JFrame
 		JButton btnVolver = new JButton("Volver");
 		btnVolver.setBounds(323, 215, 97, 25);
 		contentPane.add(btnVolver);
+		btnVolver.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				setVisible(false);
+				new Tickets();	
+			}
+		});
 		
 		JTextPane textPane = new JTextPane();
 		textPane.setEditable(false);
 		textPane.setBounds(12, 70, 408, 130);
 		contentPane.add(textPane);
 		
-		
+		setVisible(true);
 	}
 }

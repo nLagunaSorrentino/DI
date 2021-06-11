@@ -67,8 +67,9 @@ public class Tiendecita extends JFrame
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
+				setVisible(false);  //  *
 				new Articulos();
-				frame.setVisible(false);  //  *
+				
 			}
 		});
 		btnNewButton.setBounds(80, 112, 97, 25);
@@ -77,6 +78,14 @@ public class Tiendecita extends JFrame
 		JButton btnTickets = new JButton("Tickets");
 		btnTickets.setBounds(245, 112, 97, 25);
 		panel.add(btnTickets);
+		btnTickets.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				setVisible(false);  //  *
+				new Tickets();
+			
+			}
+		});
 		
 		JButton btnNewButton_1 = new JButton("Salir");
 		btnNewButton_1.addActionListener(new ActionListener() {

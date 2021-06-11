@@ -125,7 +125,7 @@ public class ConsultaArticulos extends JFrame
 			stmt.close(); //cerramos los recursos y la conexion
 			conexion.close(); //
 	//		System.out.println("El alta ha sido realizada correctamente.");
-			new ConfirmacionAlta();
+	
 		} catch (SQLException e1)
 		{
 			// TODO Auto-generated catch block

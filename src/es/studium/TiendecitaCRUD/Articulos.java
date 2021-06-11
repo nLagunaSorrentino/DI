@@ -73,7 +73,6 @@ public class Articulos extends JFrame
 		JButton btnNewButton_1 = new JButton("Modificaci\u00F3n");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
 				new ModificacionArticulo();
 			}
 		});

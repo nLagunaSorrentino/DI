@@ -81,6 +81,13 @@ public class ModificacionArticulo extends JFrame
 		JButton btnSalir = new JButton("Volver");
 		btnSalir.setBounds(323, 215, 97, 25);
 		contentPane.add(btnSalir);
+		btnSalir.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+
+				setVisible(false);
+				new Articulos();
+			}
+		});
 		
 		textField = new JTextField("");  //descripcion
 		textField.setBounds(116, 83, 192, 22);
@@ -157,7 +164,7 @@ public class ModificacionArticulo extends JFrame
 			stmt.close(); //cerramos los recursos y la conexion
 			conexion.close(); //
 	//		System.out.println("El alta ha sido realizada correctamente.");
-			new ConfirmacionAlta();
+		
 		} catch (SQLException e1)
 		{
 			// TODO Auto-generated catch block
